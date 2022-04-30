@@ -1,0 +1,206 @@
+:root {
+    --title-text-color: #212121;
+    --primery-text-color: #757575;
+    --accent-test-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --hero-buton-hover: #188CE8;
+    --primary-backgound-color: #FFFFFF;
+    --main-backgound-color: #E5E5E5;
+    --team-backgound-color: #F5F4FA;
+    --footer-backgound-color: #2F303A;
+    --heder-logo-color: #000000;
+    --adress-color: rgba(255, 255, 255, 0.6)
+    
+
+}
+body {
+    background-color:
+     var(--primary-backgound-color);
+     color: var(--primery-text-color);
+     font-family: Roboto, sans-serif; 
+}  
+.list { list-style: none;
+}
+/* лого */
+.logo-link,
+.header-logo,
+.footer-logo {
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+text-decoration: none;
+}
+.logo-link {
+    color: var(--accent-color);
+}
+
+.header-logo {
+    color: var(--heder-logo-color);
+}
+
+.footer-logo {
+    color: var(--accent-test-color);
+}
+/* навигация */
+.nav-links,
+.active-links {
+    color:var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+} 
+.nav-links:hover,
+.nav-links:focus {
+   color: var(--accent-color);
+}
+.nav-links.current {
+    color: var(--accent-color);
+}
+
+.active-links {
+    color: var(--primery-text-color);
+}
+.active-links:hover, 
+.active-links:focus {
+    color: var(--accent-color);
+}
+/* герой */
+.hero {
+    background-color: #2F303A;
+}
+.hero-title {
+    color: var(--accent-test-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-button {
+    color: var(--accent-test-color);
+    background: var(--accent-color);
+    font-family: inherit; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color:var(--hero-buton-hover);
+}
+
+/* секции */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.22;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* Преимущества */
+.benefits .subtitle {
+    color: var(--title-text-color);
+}
+.benefits .text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+/* Команда */
+.team {
+    background-color: var(--team-backgound-color);
+}
+.team .member {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;  
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+    .team .text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+} 
+
+/* футер */
+.footer {
+    background-color: var(--footer-backgound-color);
+}
+.adress {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.adress .text {
+    color: var(--accent-test-color);
+}
+.adress .link {
+    color: var(--adress-color);
+    text-decoration: none;
+}
+/* клопки порфолио */
+.active-btn {
+    background-color:var(--team-backgound-color);
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.active-btn.current {
+    color: var(--accent-test-color); 
+    background-color: var(--accent-color);
+}
+.active-btn:hover,
+.active-btn:focus {
+    background-color: var(--accent-color);
+    color:var(--accent-test-color);    
+}
+/* работы */
+.works .link {
+    text-decoration: none;
+}
+.work-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.work-text {
+    color: var(--primery-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+
+
+
+
+/* цвет второстепенного текста #212121*/
+/* цвет заголовков текста #757575 */
+/* цвет акцента #2196F3 */
+/* цвет белого текста #FFFFFF */
+/* цвет черной части лого в хедере #000000 */
+/* цвет основного main фона #FFFFFF */
+/* цвет основного main фона #E5E5E5 */
+/* цвет дополнтительного фона #F5F4FA */
+/* цвет фона хедера #FFFFFF */
+/* цвет фона футера #2F303A */
+
