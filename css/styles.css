@@ -11,11 +11,6 @@
     --heder-logo-color: #000000;
     --adress-color: rgba(255, 255, 255, 0.6)
     }
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
 body {
     background-color:
      var(--primary-backgound-color);
@@ -24,6 +19,12 @@ body {
 }  
 .list { list-style: none;
 }
+h1, h2, h3, p, ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+   
+}
+
 /* лого */
 .logo-link,
 .header-logo,
@@ -74,6 +75,8 @@ text-decoration: none;
 /* герой */
 .hero {
     background-color: #2F303A;
+    text-align: center;
+    margin-bottom: 94px;
 }
 .hero-title {
     color: var(--accent-test-color);
@@ -81,9 +84,9 @@ text-decoration: none;
     font-size: 44px;
     line-height: 1.36;
     
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    padding-bottom: 30px;
 }
 .hero-button {
     color: var(--accent-test-color);
@@ -94,6 +97,8 @@ text-decoration: none;
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -108,8 +113,21 @@ text-decoration: none;
     line-height: 1.22;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 50px;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    margin-bottom: 94px;
 }
 /* Преимущества */
+.benefits {
+  
+}
 .benefits .subtitle {
     color: var(--title-text-color);
 }
@@ -119,6 +137,7 @@ text-decoration: none;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-top: 10px;
 }
 .benefits .text {
     font-size: 14px;
@@ -128,6 +147,9 @@ text-decoration: none;
 /* Команда */
 .team {
     background-color: var(--team-backgound-color);
+}
+.team .section-title  {
+    padding-top: 94px;
 }
 .team .item {
     background: var(--primary-backgound-color);
@@ -174,6 +196,8 @@ text-decoration: none;
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 .active-btn.current {
     color: var(--accent-test-color); 
