@@ -10,9 +10,12 @@
     --footer-backgound-color: #2F303A;
     --heder-logo-color: #000000;
     --adress-color: rgba(255, 255, 255, 0.6)
-    
-
-}
+    }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 body {
     background-color:
      var(--primary-backgound-color);
@@ -110,6 +113,13 @@ text-decoration: none;
 .benefits .subtitle {
     color: var(--title-text-color);
 }
+.benefits .subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 .benefits .text {
     font-size: 14px;
     line-height: 1.71;
@@ -118,6 +128,9 @@ text-decoration: none;
 /* Команда */
 .team {
     background-color: var(--team-backgound-color);
+}
+.team .item {
+    background: var(--primary-backgound-color);
 }
 .team .member {
     color: var(--title-text-color);
