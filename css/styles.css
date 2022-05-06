@@ -9,7 +9,11 @@
     --team-backgound-color: #F5F4FA;
     --footer-backgound-color: #2F303A;
     --heder-logo-color: #000000;
-    --adress-color: rgba(255, 255, 255, 0.6)
+    --adress-color: rgba(255, 255, 255, 0.6);
+    --border-header-color: #ECECEC;
+    --border-card-color: #EEEEEE;
+
+    /* --card-site-gar: 30px;  */
     }
 body {
     background-color:
@@ -21,26 +25,34 @@ body {
     list-style: none;
     padding-right: 0px;
     padding-left: 0px;
+    margin: 0;
 }
 h1, h2, h3, p, ul {
-    margin-bottom: 0px;
-    margin-top: 0px; 
+    margin: 0px;
+    
 }
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+.container {
+    box-sizing: border-box;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 94px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+}
 /* header */
 
-.header-container {
+.header .container {
     display: flex;
-    align-items: center;
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    align-items:center;
+    padding: 0;
+    border-bottom: 1px solid var(--border-header-color);
     }
 /* лого */
 .logo-link,
@@ -159,16 +171,7 @@ margin-right: 0px;
     letter-spacing: 0.03em;
     padding-bottom: 50px;
 }
-.container {
-    box-sizing: border-box;
-    width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 94px;
-    padding-right: 15px; 
-    padding-bottom: 94px;
-    padding-left: 15px;
-}
+
 /* Преимущества */
 .benefits .list {
     display: flex;
@@ -279,23 +282,31 @@ margin-right: 0px;
     text-decoration: none; 
 }
 /* Портфолио */
-
-.works .list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+.work .container {
+    margin-top: 94px;
 }
-.works .button {
+
+.work .list {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     /* margin-left: calc(-1 * var(--card-set-gap));
+     margin-top: calc(-1 * var(--card-set-gap));  */
+  }
+  /* клопки порфолио */
+.work .button {
     margin-right: 8px;
+    padding-bottom: 50px;
 } 
 
-.works .button:last-child {
+.work .button:last-child {
     margin-right: 0px;
 }  
-/* клопки порфолио */
+
 .active-btn {
     border-radius: 4px;
     padding: 6px 22px;
@@ -318,17 +329,45 @@ margin-right: 0px;
     color:var(--accent-test-color);    
 }
 /* работы */
-.works .link {
-    text-decoration: none;
+.work .item {
+    /* flex-basis: calc(100% / 3 - var(--card-set-gap)); */
+       margin-right: 30px;
+      margin-bottom: 30px; 
+} 
+.work .item:nth-child(3n + 3) {
+      margin-right: 0px;
 }
-.work-title {
+    
+.work .item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+ }
+
+.work .link {
+    text-decoration: none;
+  
+}
+ .work .img {
+   display: block;
+    max-width: 100%;
+    height: auto;
+} 
+.card-text {
+padding: 20px 24px;
+border-right: 1px solid var(--border-card-color);
+border-bottom: 1px solid var(--border-card-color);
+border-left: 1px solid var(--border-card-color);
+}
+
+.work .title {
+    margin-bottom: 4px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.work-text {
+.work .text {
+    
     color: var(--primery-text-color);
     font-size: 16px;
     line-height: 1.88;
