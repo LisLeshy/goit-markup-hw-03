@@ -282,9 +282,7 @@ margin-right: 0px;
     text-decoration: none; 
 }
 /* Портфолио */
-.work .container {
-    margin-top: 94px;
-}
+
 
 .work .list {
      display: flex;
