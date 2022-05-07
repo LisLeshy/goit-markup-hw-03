@@ -23,8 +23,7 @@ body {
 }  
 .list {
     list-style: none;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 0;
     margin: 0;
 }
 h1, h2, h3, p, ul {
@@ -41,18 +40,16 @@ img {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 94px;
     padding-right: 15px;
-    padding-bottom: 94px;
     padding-left: 15px;
 }
 /* header */
-
+.header {
+    border-bottom: 1px solid var(--border-header-color);
+}
 .header .container {
     display: flex;
-    align-items:center;
-    padding: 0;
-    border-bottom: 1px solid var(--border-header-color);
+    align-items:center;  
     }
 /* лого */
 .logo-link,
@@ -76,25 +73,16 @@ text-decoration: none;
 .footer-logo {
     color: var(--accent-test-color);
 }
-.nav .list
- {
-    display: flex;
+
+.nav {
     margin-left: 93px;
-   
+    margin-right: 331px;
 }
-.nav .item
- {
-    margin-right: 50px;
-}
-.nav .item:last-child {
-margin-right: 0px;
-}
-.active-list {
+
+.header .list {
     display: flex;
-    list-style: none;
-    margin-left: auto;
 }
-.active-list .item +.item {
+ .header .list .item +.item {
     margin-left: 50px;
 }
 .nav-links,
@@ -127,19 +115,21 @@ margin-right: 0px;
 }
 /* герой */
 .hero {
-    background-color: #2F303A;
+     padding-top: 200px;
+     padding-bottom: 200px;
+     background-color: #2F303A;
+    
 }
 .hero .container {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
 }
 
 .hero-title {
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     color: var(--accent-test-color);
     font-weight: 900;
     font-size: 44px;
@@ -166,13 +156,14 @@ margin-right: 0px;
 
 /* секции */
 .section-title {
+    margin-bottom: 50px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.22;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-bottom: 50px;
+    
 }
 
 /* Преимущества */
@@ -189,10 +180,15 @@ margin-right: 0px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .benefits .list {
     display: flex;
 }
 .benefits .item {
+    width: 270px;
     margin-right: 30px;
 }
 
@@ -200,15 +196,13 @@ margin-right: 0px;
     margin-right: 0px;
 }
 .benefits .subtitle {
-    color: var(--title-text-color);
-}
-.benefits .subtitle {
     text-transform: uppercase;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    color: var(--title-text-color);
     
 }
 .benefits .text {
@@ -217,8 +211,9 @@ margin-right: 0px;
     letter-spacing: 0.03em;
 }
 /* Галерея */
-.gallery .container {
-    padding-top: 0px;
+
+.gallery  {
+    padding-bottom: 94px; 
 }
 .gallery .list {
     display: flex;
@@ -232,6 +227,11 @@ margin-right: 0px;
     margin-right: 0px;
 }
 /* Команда */
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--team-backgound-color);
+}
 .team .list {
     display: flex;
 }
@@ -244,43 +244,35 @@ margin-right: 0px;
 .team .item:last-child {
     margin-right: 0px;
 }
-.team {
-    background-color: var(--team-backgound-color);
+
+ .team-description {
+    padding-top: 30px;
+    padding-bottom: 30px; 
 }
 
-.member-img {
-    padding-bottom: 30px;
-}
 .team .member {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;  
     text-align: center;
-    letter-spacing: 0.03em;
-    
+    letter-spacing: 0.03em; 
 }
-    .team .text {
-    padding-bottom: 30px;
+.team .text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    
-    
 } 
 
 /* футер */
 .footer {
-    background-color: var(--footer-backgound-color);
-}
-.footer-container {
     padding: 60px 15px;
-    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    }
+    background-color: var(--footer-backgound-color);
+}
 
 .adress {
     padding-top: 20px;
@@ -298,7 +290,10 @@ margin-right: 0px;
     text-decoration: none; 
 }
 /* Портфолио */
-
+.work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .work .list {
      display: flex;
@@ -360,11 +355,7 @@ margin-right: 0px;
     text-decoration: none;
   
 }
- .work .img {
-   display: block;
-    max-width: 100%;
-    height: auto;
-} 
+
 .card-text {
 padding: 20px 24px;
 border-right: 1px solid var(--border-card-color);
