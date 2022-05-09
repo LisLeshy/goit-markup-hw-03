@@ -36,7 +36,6 @@ img {
     height: auto;
 }
 .container {
-    box-sizing: border-box;
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
@@ -76,11 +75,12 @@ text-decoration: none;
 
 .nav {
     margin-left: 93px;
-    margin-right: 331px;
+    margin-right: auto;
 }
 
 .header .list {
     display: flex;
+    
 }
  .header .list .item +.item {
     margin-left: 50px;
@@ -268,14 +268,14 @@ text-decoration: none;
 
 /* футер */
 .footer {
-    padding: 60px 15px;
+    padding: 60px 0px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--footer-backgound-color);
 }
 
-.adress {
-    padding-top: 20px;
+.adress { 
+    margin-top: 20px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -285,7 +285,8 @@ text-decoration: none;
     color: var(--accent-test-color);
 }
 .adress .link {
-    padding-top: 9px;
+    display: block;
+    margin-top: 9px;
     color: var(--adress-color);
     text-decoration: none; 
 }
@@ -300,8 +301,6 @@ text-decoration: none;
      align-items: center;
      justify-content: center;
      flex-wrap: wrap;
-     padding: 0;
-     margin: 0;
      list-style: none;
      /* margin-left: calc(-1 * var(--card-set-gap));
      margin-top: calc(-1 * var(--card-set-gap));  */
@@ -309,7 +308,7 @@ text-decoration: none;
   /* клопки порфолио */
 .work .button {
     margin-right: 8px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 } 
 
 .work .button:last-child {
